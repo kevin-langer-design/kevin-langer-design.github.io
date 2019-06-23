@@ -1,0 +1,298 @@
+* {
+  	box-sizing: border-box;
+}
+
+body, html {
+  	height: 100%;
+  	margin: 0;
+}
+
+body {
+	background-color: #F9F2E8;
+	font-family: "Josefin Sans", sans-serif;
+	color: #757575;
+}
+
+h1 {
+	font-size: 42px;
+	color: #ffffff;
+	padding-top: 12%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+p, li {
+	font-size: 20px;
+  line-height: 26px;
+}
+
+a {
+	color:#68B0AB;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#68B0AB;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin: 0 auto 150px;
+	flex-wrap: wrap;
+}
+
+.row {
+	padding: 5% 10%;
+}
+
+.half {
+  width: 44%;
+  margin: 0 3%;
+}
+
+.parallax01 {
+	background-image: url("parallax01.jpg");
+  	height: 100%; 
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	overflow: hidden;
+}
+
+.parallax02 {
+	background-image: url("parallax02.jpg");
+  	height: 100%; 
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	overflow: hidden;
+}
+
+#profile-photo {
+  width: 100;
+  text-align: center;
+  display: block;
+  margin: 50px auto;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.portfolio-item {
+	color: #757575;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolio-item:hover {
+	color: #68B0AB;
+}
+
+.portfolio-item:hover  .web, .portfolio-item:hover .email, .portfolio-item:hover .print, .portfolio-item:hover .video, .social-icon:hover .linkedin, .social-icon:hover .vimeo, .social-icon:hover .dribbble, .social-icon:hover .flickr {
+	fill: #68B0AB;
+}
+
+.web, .email, .print, .video, .linkedin, .vimeo, .dribbble, .flickr {
+	fill: #757575;
+	margin: 0 4%;
+}
+
+.thumb:hover {
+  box-shadow: 0px 0px 12px #a6a6a6;
+  cursor: pointer;
+}
+
+/*-----Navigation Menu-----*/
+
+.menu {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1;
+	display: block;
+	text-align: center;
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/*-----Modals Menu-----*/
+
+.thumb {
+  width: 200px;
+  height: 100%;
+  margin: 20px
+}
+
+.modal-wrapper {
+  width: 100vh;
+
+}
+
+/* The Modal (background) */
+.myModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 25px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #F9F2E8;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #F9F2E8;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #757575;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: #F9F2E8;
+  padding: 2px 16px;
+  color: #757575;
+}
+
+#caption {
+  text-align: left;
+}
