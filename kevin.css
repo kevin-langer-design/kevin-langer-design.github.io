@@ -66,6 +66,21 @@ footer {
   margin: 0 3%;
 }
 
+.header{
+  background: rgb(104,176,171);
+  background: radial-gradient(circle, rgba(104,176,171,1) 0%, rgba(49,118,136,1) 100%);
+}
+
+.header>h1 {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.header>h1:nth-of-type(2) {
+  font-weight: 200;
+  margin-top: 10px;
+}
+
 .parallax01 {
 	background-image: url("Assets/kev-working-shadow.jpg");
   	height: 100%; 
@@ -141,7 +156,7 @@ footer {
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 .overlay {
@@ -186,7 +201,7 @@ footer {
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {font-size: 40px}
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
