@@ -64,17 +64,7 @@ footer {
 }
 
 .parallax01 {
-	background-image: url("parallax01.jpg");
-  	height: 100%; 
-  	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	overflow: hidden;
-}
-
-.parallax02 {
-	background-image: url("parallax02.jpg");
+	background-image: url("kev-working-shadow.jpg");
   	height: 100%; 
   	background-attachment: fixed;
   	background-position: center;
