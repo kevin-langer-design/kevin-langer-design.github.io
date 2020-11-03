@@ -92,17 +92,17 @@ footer {
   	overflow: hidden;
 }
 
-#profile-photo {
-  width: 100;
-  text-align: center;
-  display: block;
-  margin: 50px auto;
-}
-
 .flex-row {
 	display: flex;
 	flex-direction:row;
 	flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column-50 {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
 }
 
 .space-between {
@@ -114,23 +114,47 @@ footer {
 }
 
 .portfolio-item {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 1.5em;
 	color: #757575;
+  background: linear-gradient(0deg, rgba(247,246,243,1) 0%, rgba(249,242,232,1) 90%);
+  border: 2px solid #757575;
+  border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+  box-shadow: 0px 0px 12px #a6a6a6;
+  transition: transform 0.25s;
 }
 
 .portfolio-item:hover {
 	color: #68B0AB;
+  box-shadow: 0px 0px 24px #a6a6a6;
+  border: 3px solid #68B0AB;
+  transform: scale(1.2, 1.2);
 }
 
-.portfolio-item:hover  .web, .portfolio-item:hover .email, .portfolio-item:hover .print, .portfolio-item:hover .video, .social-icon:hover .linkedin, .social-icon:hover .vimeo, .social-icon:hover .dribbble, .social-icon:hover .flickr {
+.portfolio-item> h3 {
+  margin:0px 0px 10px;
+}
+
+.portfolio-item:hover  .web, .portfolio-item:hover .email, .portfolio-item:hover .print, .portfolio-item:hover .video {
 	fill: #68B0AB;
 }
 
-.web, .email, .print, .video, .linkedin, .vimeo, .dribbble, .flickr {
-	fill: #757575;
-	margin: 0 4%;
+.web, .email, .print, .video {
+  fill: #757575;
+  margin: 0 4%;
+}
+
+.social-icon:hover .linkedin, .social-icon:hover .vimeo, .social-icon:hover .dribbble, .social-icon:hover .flickr {
+  fill: #68B0AB;
+}
+
+.linkedin, .vimeo, .dribbble, .flickr {
+  fill: #757575;
+  margin: 0 4%;
 }
 
 .thumb:hover {
@@ -146,6 +170,54 @@ footer {
     h1 {
       font-size: 52px;
     }
+
+    .column-50 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+}
+
+/*-----Profile Photo Animation-----*/
+
+.profile-photo-container {
+  background-color: transparent;
+  margin: 0 auto 50px;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.profile-photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.profile-photo-container:hover .profile-photo {
+  transform: rotateY(180deg);
+}
+
+.profile-photo-front, .profile-photo-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.profile-photo-front {
+}
+
+.profile-photo-back {
+  transform: rotateY(180deg);
+}
+
+.profile-img {
+  width: 400px;
 }
 
 /*-----Navigation Menu-----*/
