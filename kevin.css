@@ -25,12 +25,11 @@ h1 {
 
 h2 {
 	font-size: 1.6em;
-  line-height: 1.7em;
 }
 
 h3 {
 	font-size: 1.5em;
-  line-height: 1.7em;
+  line-height: 1.6em;
 }
 
 h4 {
@@ -168,34 +167,6 @@ footer {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)   {
-    /*h1 {
-      font-size: 52px;
-    }*/
-
-    body {
-      font-size: 40px;
-    }
-
-    h1 {
-      font-size: 3em;
-    }
-
-    .column-50 {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .parallax01 {
-      background-attachment: scroll;
-    }
-
-    .portfolio-item {
-      width: 100%;
-    }
-}
-
 /*-----Profile Photo Animation-----*/
 
 .profile-photo-container {
@@ -299,6 +270,42 @@ footer {
   font-size: 3em;
 }
 
+@media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)   {
+    /*h1 {
+      font-size: 52px;
+    }*/
+
+    body {
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    .column-50 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .parallax01 {
+      background-attachment: scroll;
+    }
+
+    .portfolio-item {
+      width: 100%;
+    }
+
+    .menu {
+      top: .3em;
+      right: .3em;
+      width: 2em;
+      height: 2em;
+      font-size: 2em;
+    }
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 40px}
   .overlay .closebtn {
@@ -306,7 +313,6 @@ footer {
   top: .5em;
   right: .5em;
   }
-}
 
 /*-----Modals Menu-----*/
 
