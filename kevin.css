@@ -173,10 +173,18 @@ footer {
       font-size: 52px;
     }*/
 
+    body {
+      font-size: 40px;
+    }
+
     .column-50 {
       display: flex;
       flex-direction: column;
       width: 100%;
+    }
+
+    .parallax01 {
+      background-attachment: scroll;
     }
 }
 
