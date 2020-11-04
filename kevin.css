@@ -158,6 +158,14 @@ footer {
   margin: 0 4%;
 }
 
+.thumb {
+  width: 200px;
+  height: 100%;
+  margin: 20px;
+  box-shadow: 0px 0px 12px #a6a6a6;
+  transition: transform 0.25s;
+}
+
 .thumb:hover {
   width: 200px;
   height: 100%;
@@ -315,15 +323,6 @@ footer {
   }
 
 /*-----Modals Menu-----*/
-
-.thumb {
-  width: 200px;
-  height: 100%;
-  margin: 20px;
-  box-shadow: 0px 0px 12px #a6a6a6;
-  transition: transform 0.25s;
-
-}
 
 .modal-wrapper {
   width: 100vh;
