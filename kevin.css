@@ -106,7 +106,7 @@ footer {
   width: 48%;
 }
 
-.space-between {
+.portfolio-item-container {
   justify-content: space-between;
 }
 
@@ -395,6 +395,10 @@ footer {
 
     .parallax01 {
       background-attachment: scroll;
+    }
+
+    .portfolio-item-container {
+      justify-content: center;
     }
 
     .portfolio-item {
