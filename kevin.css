@@ -375,9 +375,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)   {
-    /*h1 {
-      font-size: 52px;
-    }*/
 
     body {
       font-size: 40px;
@@ -414,10 +411,19 @@ footer {
     }
 }
 
+/*--High DPI Tablets--*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      font-size: 30px;
+    }
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 40px}
   .overlay .closebtn {
-  /*font-size: 2em;*/
   top: .5em;
   right: .5em;
   }
