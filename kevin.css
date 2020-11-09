@@ -417,7 +417,7 @@ footer {
   font-size: 3em;
 }
 
-@media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)   {
+@media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx)   {
 
     body {
       font-size: 40px;
