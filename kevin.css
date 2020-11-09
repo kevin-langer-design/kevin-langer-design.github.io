@@ -417,7 +417,7 @@ footer {
   font-size: 3em;
 }
 
-@media only screen and (max-width: 768px)/*, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)*/   {
+@media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)   {
 
     body {
       font-size: 40px;
@@ -466,6 +466,17 @@ footer {
     body {
       font-size: 30px;
     }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+      body {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-height: 450px) {
