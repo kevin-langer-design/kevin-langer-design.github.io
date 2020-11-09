@@ -441,6 +441,10 @@ footer {
       justify-content: center;
     }
 
+    .study-item {
+      width: 100%;
+    }
+
     .portfolio-item {
       width: 100%;
     }
