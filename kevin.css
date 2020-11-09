@@ -63,7 +63,7 @@ footer {
 	padding: 5% 10%;
 }
 
-.half {
+.bullets-half {
   width: 44%;
   margin: 0 3%;
 }
@@ -417,24 +417,21 @@ footer {
   font-size: 3em;
 }
 
-@media only screen and (max-width: 768px), screen and (min-width: 300px) and (max-width:812px)/* and (-webkit-min-device-pixel-ratio: 2),  , (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)*/   {
+@media only screen and (max-width: 1024px) {
+    .parallax01 {
+      background-attachment: scroll;
+    }  
+}
 
-    body {
-      font-size: 20px;
-    }
-
-    h1 {
-      font-size: 3em;
-    }
-
+@media only screen and (max-width: 768px) {
     .column-50 {
       display: flex;
       flex-direction: column;
       width: 100%;
     }
 
-    .parallax01 {
-      background-attachment: scroll;
+    .bullets-half {
+      width: 100%;
     }
 
     .portfolio-item-container {
@@ -470,27 +467,6 @@ footer {
       width: 100%;
     }
 }
-
-/*--High DPI Tablets--
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-      font-size: 30px;
-    }
-}
-
- ----------- Retina Screens ----------- 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-      body {
-    font-size: 20px;
-  }
-}*/
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 40px}
