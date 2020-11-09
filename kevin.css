@@ -417,7 +417,7 @@ footer {
   font-size: 3em;
 }
 
-@media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)   {
+@media only screen and (max-width: 38.4em)/*, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)*/   {
 
     body {
       font-size: 40px;
@@ -458,7 +458,7 @@ footer {
     }
 }
 
-/*--High DPI Tablets--*/
+/*--High DPI Tablets--
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -468,7 +468,7 @@ footer {
     }
 }
 
-/* ----------- Retina Screens ----------- */
+ ----------- Retina Screens ----------- 
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -477,7 +477,7 @@ footer {
       body {
     font-size: 20px;
   }
-}
+}*/
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 40px}
