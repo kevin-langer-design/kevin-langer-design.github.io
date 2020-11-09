@@ -460,6 +460,15 @@ footer {
     .sectional-2 {
       flex-direction: column-reverse;
     }
+
+    .profile-photo-container {
+      width: 15em;
+      height: 15em;
+    }
+
+    .profile-img {
+      width: 100%;
+    }
 }
 
 /*--High DPI Tablets--
