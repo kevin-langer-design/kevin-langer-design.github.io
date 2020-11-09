@@ -424,6 +424,25 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      line-height: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      line-height: 1.35em;
+    }
+
+    h4 {
+      font-size: 1.1em;
+      line-height: 1.25em;
+    }
+
     .column-50 {
       display: flex;
       flex-direction: column;
@@ -432,6 +451,10 @@ footer {
 
     .bullets-half {
       width: 100%;
+    }
+
+    .bullets-half>ul {
+      margin: 0;
     }
 
     .portfolio-item-container {
