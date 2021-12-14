@@ -54,8 +54,9 @@ a:hover {
 footer {
 	display: flex;
 	justify-content: space-between;
-	width: 50%;
-	margin: 0 auto 150px;
+	width: 30%;
+	margin: 0 auto;
+  padding: 100px 0;
 	flex-wrap: wrap;
 }
 
@@ -124,6 +125,7 @@ footer {
 
 .study-item {
   width: 370px;
+  min-height: 460px;
   margin-bottom: 20px;
   padding: 1.5em;
   color: #757575;
@@ -133,6 +135,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 0px 0px 12px #a6a6a6;
   transition: transform 0.25s;
 }
@@ -310,6 +313,11 @@ footer {
   padding: 0;
   width: 90%;
   max-width: 600px;
+  margin: 0 auto;
+}
+
+.modal-mobile {
+  width: 50% !important;
   margin: 0 auto;
 }
 
