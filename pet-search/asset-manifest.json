@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pet-search/static/css/main.902aa8a0.css",
+    "main.js": "/pet-search/static/js/main.12a2a4ea.js",
+    "static/js/787.0096e040.chunk.js": "/pet-search/static/js/787.0096e040.chunk.js",
+    "index.html": "/pet-search/index.html",
+    "main.902aa8a0.css.map": "/pet-search/static/css/main.902aa8a0.css.map",
+    "main.12a2a4ea.js.map": "/pet-search/static/js/main.12a2a4ea.js.map",
+    "787.0096e040.chunk.js.map": "/pet-search/static/js/787.0096e040.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.902aa8a0.css",
+    "static/js/main.12a2a4ea.js"
+  ]
+}

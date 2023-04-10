@@ -1,0 +1,43 @@
+.carousel-indicators [data-bs-target] {
+    background-color: lightgray;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none;
+    color: lightgrey;
+    font-size: 3em;
+}
+
+.carousel-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#myCarousel {
+    margin: 8em auto;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto 2.5em;
+    height: 420px;
+}
+
+.testimonial img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.testimonial h3 {
+    margin: 1em auto;
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .testimonial {
+        width: 70%;
+        height: auto;
+    }
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="waves.css">
+    <link rel="stylesheet" href="marquee.css">
+    <link rel="stylesheet" href="testimonial.css">
+
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="containter-fluid">
+        <!--Banner-->
+        <div class="banner">
+            <svg class="banner__cross" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <g transform="translate(-58.146 -173.146)">
+                    <line x1="20" y2="20" transform="translate(58.5 173.5)" fill="none" stroke="#fff" stroke-width="1">
+                    </line>
+                    <line x1="20" y1="20" transform="translate(58.5 173.5)" fill="none" stroke="#fff" stroke-width="1">
+                    </line>
+                </g>
+            </svg>
+            <span>20% off your first booking!</span>
+        </div>
+
+        <div class="hero">
+            <div class="header">
+
+                <!--Content before waves-->
+                <div class="container-fluid inner-header">
+                    <div class="row">
+                        <div class="col-6 logo">
+                            <img src="assets/Travel_Logo.svg" alt="Travel Logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1>Explore somewhere new</h1>
+                    </div>
+                    <div class="row">
+                        <button class="btn hover-border">
+                            <span>Book now</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--Waves-->
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave"
+                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
+                </div>
+
+            </div><!--header class end-->
+        </div> <!--hero div end-->
+
+        <!--Logo Marquee-->
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <div class="marquee__group">
+                    <img class="vertical-icon" src="assets/AVIS_logo_2012.svg" alt="Avis">
+                    <img class="horizontal-icon" src="assets/Delta_logo.svg" alt="Delta Airlines">
+                    <img class="vertical-icon" src="assets/Uber_logo_2018.svg" alt="Uber">
+                    <img class="horizontal-icon" src="assets/United_Airlines_Logo.svg" alt="United Airlines">
+                    <img class="horizontal-icon" src="assets/Samsonite_Logo.svg" alt="Samsonite">
+                    <img class="shrink-icon" src="assets/Lyft_logo.svg" alt="Lyft">
+                    <img class="horizontal-icon" src="assets/Virgin_Atlantic_logo_2018.svg" alt="Virgin Atantic">
+                    <img class="horizontal-icon" src="assets/Budget_logo.svg" alt="Budget">
+                </div>
+
+                <div class="marquee__group">
+                    <img class="vertical-icon" src="assets/AVIS_logo_2012.svg" alt="Avis">
+                    <img class="horizontal-icon" src="assets/Delta_logo.svg" alt="Delta Airlines">
+                    <img class="vertical-icon" src="assets/Uber_logo_2018.svg" alt="Uber">
+                    <img class="horizontal-icon" src="assets/United_Airlines_Logo.svg" alt="United Airlines">
+                    <img class="horizontal-icon" src="assets/Samsonite_Logo.svg" alt="Samsonite">
+                    <img class="shrink-icon" src="assets/Lyft_logo.svg" alt="Lyft">
+                    <img class="horizontal-icon" src="assets/Virgin_Atlantic_logo_2018.svg" alt="Virgin Atantic">
+                    <img class="horizontal-icon" src="assets/Budget_logo.svg" alt="Budget">
+                </div>
+            </div>
+        </div><!--End of marquee-wrapper-->
+
+        <!--Value Props-->
+        <div class="container-xl value-prop">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <img src="assets/vacation-choice.jpg" alt="Choosing your vacation">
+                </div>
+                <div class="col-sm-6 order-last">
+                    <h3>Choose the way you vacay</h3>
+                    <p>Our vacation packages take you to the most vibrant designations. If you are either
+                        looking to relax and unwind in the majesty of nature or become an urban explorer in a skyscraper
+                        jungle there is an adventure waiting for you. Or let us craft a custom package just for you.</p>
+                    <div class="row justify-content-evenly">
+                        <button class="btn hover-border">
+                            <span>Book now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xl value-prop">
+            <div class="row align-items-center">
+                <div class="col-sm-6 order-sm-2">
+                    <img src="assets/payment.jpg" alt="Easy payment options">
+                </div>
+                <div class="col-sm-6 order-sm-1">
+                    <h3>Low and flexible pricing</h3>
+                    <p>All of our experiences are priced to convervately, we don't believe in price gouging. And with
+                        our installment plan you can take the bulk of the price tag and chop it up into more
+                        manageable payments. Speak with one of our agents to see if you can accept any of your miles or
+                        cc points as well!</p>
+                    <div class="row justify-content-evenly">
+                        <button class="btn hover-border">
+                            <span>Book now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xl value-prop">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <img src="assets/concierge.jpg" alt="Top leve concierge">
+                </div>
+                <div class="col-sm-6 order-last">
+                    <h3>Dedicated concierge team</h3>
+                    <p>Service is our top priority so booking with us isn't just clicking a few buttons to go on
+                        vacation. No, it is enrolling a team of dedicated concierge agents ready to make your trip the
+                        memory of a lifetime. We have highly knowledgeable attendants all over the world that know just
+                        how to make your trip shine. </p>
+                    <div class="row justify-content-evenly">
+                        <button class="btn hover-border">
+                            <span>Book now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Vacation Packages-->
+        <div class="container vacation-packages">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/Tahoe.jpg" class="card-img-top img-up" alt="Tahoe">
+                        <div class="card-body">
+                            <h5 class="card-title">Tahoe</h5>
+                            <p class="card-text">Enjoy the relaxing blue waters of Tahoe in a canoe, or go out on the
+                                lake in a paddle boat. Hike the surrounding trails or roll the dice in the nearby
+                                casinos.</p>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <button class="btn hover-border">
+                                <span>Book now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/LasVegas.jpg" class="card-img-top img-down" alt="Las Vegas">
+                        <div class="card-body">
+                            <h5 class="card-title">Las Vegas</h5>
+                            <p class="card-text">Try your luck at the tables or just enjoy the countless shows. There is
+                                something for everyone here in a town that never sleeps.</p>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <button class="btn hover-border">
+                                <span>Book now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/Tulum.jpg" class="card-img-top img-down" alt="Tulum">
+                        <div class="card-body">
+                            <h5 class="card-title">Tulum</h5>
+                            <p class="card-text">A snorkeling paradise or a beach lover's haven. Soak up the sun and the
+                                margaritas while you enjoy the beautiful sea views.</p>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <button class="btn hover-border">
+                                <span>Book now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/Paris.jpg" class="card-img-top img-up img-up" alt="Paris">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris</h5>
+                            <p class="card-text">Art and food intersect in this classic city. So many museums await you,
+                                and so do all the dishes for you to try.</p>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <button class="btn hover-border">
+                                <span>Book now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/NewYork.jpg" class="card-img-top img-down" alt="New York">
+                        <div class="card-body">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">Sing along to all the broadway shows then take a tour of the Statue of
+                                Liberty. Stroll along Central park and fall in love with the charm of the city.</p>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <button class="btn hover-border">
+                                <span>Book now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/London.jpg" class="card-img-top img-middle" alt="London">
+                        <div class="card-body">
+                            <h5 class="card-title">London</h5>
+                            <p class="card-text">Catch the changing of the guards then see Big Ben. There is so much for
+                                London to offer, you'll just have to see it all atop the London Eye.</p>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <button class="btn hover-border">
+                                <span>Book now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--End of vacation-packages-->
+
+        <!--Carousel Testimonials-->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <img src="assets/Melinda.png" alt="Melinda">
+                        <h3>Melinda</h3>
+                        <p>I had an amazing adventure in Paris! Travel was on top of all my reservations and sightseeing
+                            itineraries. They found the perfect place to stay right next to this unbelievable cafe. The
+                            booking process was a breeze. I will definately be using them again.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="assets/Jon.png" alt="Jon">
+                        <h3>Jon</h3>
+                        <p>After so many failed or bad vacations I just assumed I hated to travel. Turns out I'm just
+                            not that great at planning travel. Using Travel was a night and day experience from my
+                            normal vacations and I think I actually might love to travel now.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="assets/Sarah.png" alt="Sarah">
+                        <h3>Sarah</h3>
+                        <p>There are so many great vacation options to pick from, I'm surprised I was able to settle on
+                            one... this time. I am excited to try the other vacation packages. Everything was perfect
+                            from my flight times to my hotel. I loved every minute they planned for me.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="assets/Omar.png" alt="Omar">
+                        <h3>Omar</h3>
+                        <p>Travel has great customer service. When I went to check into the hotel I found out that the
+                            hotel had oversold and didn't have a room for me. I called Travel and they were able to find
+                            me an even better place nearby. They took no time at all. It could have been an awful
+                            situation that ruins a trip but Travel solved the issues and got me back up and running. It
+                            was barely a speed bump.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="assets/Rosa.png" alt="Rosa">
+                        <h3>Rosa</h3>
+                        <p>I wanted to surprise my girlfriend with a romantic trip she would love. I told Travel a few
+                            things I wanted and they put together a custom package that was far better than anything I
+                            could have planned. And it worked, she's now my fiancé!</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="assets/Danny.png" alt="Danny">
+                        <h3>Danny</h3>
+                        <p>Just do it! You won't be disappointed with any of the vacation packages. I've used Travel a
+                            couple times now and I won't be doing any vacation without them from now on.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="assets/Kate.png" alt="Kate">
+                        <h3>Kate</h3>
+                        <p>I had always wanted to go island hopping but wasn't sure where to start or what islands I
+                            should go to, it's all too much for me to plan. Travel knew all the things I didn't and
+                            helped me plan an unforgettable trip.</p>
+                    </div>
+                </div>
+
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">&#10094;</span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">&#10095;</span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div><!--coursel-inner div end-->
+        </div><!--#myCarousel div end-->
+    </div> <!--body-wrapper end div-->
+
+    <footer>
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-12 logo">
+                    <img src="assets/Travel_Logo.svg" alt="Travel">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-3">
+                    <p>Copywrite Travel 2023</p>
+                </div>
+                <div class="col-xl-3">
+                    <p>Terms and conditions</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

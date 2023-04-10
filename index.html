@@ -1,283 +1,838 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN87Z3PVK4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Kevin Langer</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  gtag('config', 'G-QN87Z3PVK4');
-</script>
-<title>Kevin Langer - Portfolio</title>
-<link rel="icon" type="image/gif" href="favicon.gif">  
-<link rel="stylesheet" type="text/css" href="kevin.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta property="og:title" content="Kevin Langer - Portfolio">
-<meta property="og:description" content="Welcome to the portfolio of Kevin Langer.">
-<meta property="og:image" content="https://kevin-langer-design.github.io/Assets/kev_social_image.jpg">
-<meta property="og:url" content="http://www.kevinlanger.com">
-<meta name="twitter:card" content="summary_large_image">
-<meta property="og:site_name" content="Kevin Langer - Portfolio">
-<meta name="twitter:image:alt" content="Kevin Langer">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
 </head>
+
 <body>
+    <div class="containter-fluid">
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="/index.html">Portfolio</a>
-    <a href="/project-study-trust-center.html">Project Study - Trust Center</a>
-    <a href="/project-study-noggin-branding.html">Project Study - Noggin Branding</a>
-    <a href="/workshop-study-sap.html">Workshop Study - SAP</a>
-    <a href="/project-study-noggin.html">Project Study - Noggin Agenda</a>
-    <a href="/web.html">Web</a>
-    <a href="/email.html">Email</a>
-    <a href="/graphic.html">Graphic</a>
-    <a href="/video.html">Video</a>
-  </div>
-</div>
+        <nav class="navbar sticky-top navbar-expand-sm bg-body-tertiary"> <!--Navigation-->
+            <div class="container-xl">
+                <a class="navbar-brand nav-name" href="#">Kevin Langer</a>
+                <a href="http://www.linkedin.com/in/kevinlanger/" target="_blank">
+                    <img src="./assets/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#nav-about">About</a>
+                        <a class="nav-link" href="#nav-projects">Projects</a>
+                        <a class="nav-link" href="#nav-skills">Skills</a>
+                        <a class="nav-link" href="#nav-experience">Experience</a>
+                    </div>
+                </div>
+            </div>
+        </nav><!--Navigation end-->
 
-<span class="menu" onclick="openNav()">&#9776;</span>
+        <div class="container-xl py-5 hero" id="nav-about"> <!--Hero containter-->
+            <div class="clearfix">
+                <div class="profile-photo-container col-md-5 float-md-end mb-3 ms-md-3"> <!--Photo animation-->
+                    <div class="profile-photo">
+                        <div class="profile-photo-front">
+                            <img class="profile-img" src="./assets/Kevin_Portfolio_Picture.png"
+                                alt="Profile photo of Kevin">
+                        </div>
+                        <div class="profile-photo-back">
+                            <img class="profile-img" src="./assets/Kevin_Daphne_Portfolio_Picture.png"
+                                alt="Profile photo of Kevin and Daphne">
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <h1 class="px-0">Hi, I'm<br><span class="hglt">Kevin Langer</span></h1>
+                </div>
+                <p class="display-6 pb-4">I'm a front-end developer with a design background. I've been designing and
+                    building websites for
+                    several years.</p>
+                <p class="display-6">I've used various tools throughout my experience including HTML, CSS, JavaScript,
+                    React, Sass,
+                    and I'm always learning more. Check out some of my work examples.</p>
+            </div>
+        </div><!--Hero containter end-->
 
-<div class="parallax01">
-	<h1>Kevin Langer<br>Designer</h1>
-</div>
+        <div class="carousel-indicators container-xl mx-auto" id="nav-projects"> <!--Carousel-->
+            <a role="button" href="" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="col-4 px-4"
+                aria-current="true" aria-label="Slide 1">
+                <div class="project col-4">
+                    <img src="./assets/travel.png">
+                    <h2>Travel</h2>
+                </div>
+            </a>
+            <a role="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" class="col-4 col-lg-12 px-4"
+                aria-current="true" aria-label="Slide 2">
+                <div class="project col-4">
+                    <img src="./assets/form.png">
+                    <h2>Medtech</h2>
+                </div>
+            </a>
+            <a role="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" class="col-4 col-lg-12 px-4"
+                aria-current="true" aria-label="Slide 3">
+                <div class="project col-4">
+                    <img src="./assets/pet-search.png">
+                    <h2>Pet Search</h2>
+                </div>
+            </a>
+        </div>
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
 
-<div class="row">
-	<div class="flex-row">
-		<div class="column-50">
-			<h2>Hi, I'm Kevin.</h2>
-			<p>I'm your friendly neighborhood Designer trying to make the world a better place one design project at a time. I have supported many design roles and have worked on a variety of projects that give me a wide range of experiences. I have had the chance to work with some amazing people and hopefully I'll get the chance to work with many more. As a Designer my goal is to deliver high quality designs crafted with precision. I probably drink too much coffee. Your dog will love me. The feeling will be mutual.</p>
-		</div>
-		<div class="column-50">
-			<div class="profile-photo-container">
-				<div class="profile-photo">
-					<div class="profile-photo-front">
-						<img class="profile-img" src="Assets/Kevin_Portfolio_Picture.png" alt="Profile photo of Kevin">
-					</div>
-					<div class="profile-photo-back">
-						<img class="profile-img" src="Assets/Kevin_Daphne_Portfolio_Picture.png" alt="Profile photo of Kevin and Daphne">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="flex-row">
-		<div class="column-50">
-			<h2>Applying the Right Strategy</h2>
-			<p>Keeping the user in mind I advocate crafting strategies to identify and eliminate pain points and increase intuitive use. Iterating on projects and continuing to problem solve to bring about solutions are some of the best spells in my designer spellbook. Communicating time, technical restraints, forecasted troubles, and being prepared ensures a project is well managed and set up for success.</p>
-		</div>
-		<div class="column-50">
-			<h2>Working with Teams</h2>
-			<p>I love working with teams and learning from those who give knowledge and provide some of my own in return. The best work comes when minds are put together. Being a team player means more than just doing your part in the project, it also means you're putting your finger on the pulse of the project and everyone involved. Identifying points where the team needs to pivot or adapt is crucial for success. We're all stronger when we work together.</p>
-		</div>
-	</div>
-</div>
+                <div id="project-travel" class="carousel-item active">
+                    <div class="container-lg mx-auto row">
+                        <div class="triangle-marker col-4 mx-5 align-self-start"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 d-flex p-4 row justify-content-between">
+                            <h2>Travel demo website</h2>
+                            <p class="py-4">This is a demo travel agent website with several flashy JavaScript elements
+                                on the page.
+                                The page uses jQuery and Bootstrap, but there are custom buttons, ticker element,
+                                animated background, and a modified Bootstrap carousel.</p>
+                            <div class="row justify-content-center mx-auto py-4">
+                                <a href="https://kevin-langer-design.github.io/travel/index.html" target="_blank"
+                                    role="button" class="btn btn-primary col-md-4 col-8 mx-3 mx-md-5 align-middle">Check out the
+                                    live page</a>
+                                <a class="col-md-1 col-2 text-center"
+                                    href="https://github.com/kevin-langer-design/kevin-langer-design.github.io/tree/master/travel"
+                                    target="_blank"><img class="project-icon" src="./assets/github-mark.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<div class="row">
-	<h2>Here's a deeper dive into some projects I've worked on</h2>
-	<div class="flex-row portfolio-item-container">
+                <div id="project-medtech" class="carousel-item">
+                    <div class="container-lg mx-auto row">
+                        <div class="col-4"></div>
+                        <div class="triangle-marker col-4 mx-md-5 align-self-center"></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 d-flex p-4 row justify-content-between">
+                            <h2>Medtech from demo website</h2>
+                            <p class="py-4">This is a demo landing page for a medical company with a prominent form
+                                element. The page was built in React and uses Bootstrap styling. The form is set up to
+                                demo a return upon use. </p>
+                            <div class="row justify-content-center mx-auto py-4">
+                                <a href="https://kevin-langer-design.github.io/medtech/index.html" target="_blank"
+                                    role="button" class="btn btn-primary col-md-4 col-8 mx-3 mx-md-5 align-middle">Check out the
+                                    live page</a>
+                                <a class="col-md-1 col-2 text-center"
+                                    href="https://github.com/kevin-langer-design/kevin-langer-design.github.io/tree/master/medtech"
+                                    target="_blank"><img class="project-icon" src="./assets/github-mark.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="/project-study-trust-center.html">
-			<div class="study-item">
-				<h3>Project Study</h3>
-				<h3>Viz.ai Trust Center</h3>
-				<img class="study-image" src="Assets/trust-center-project.png">
-			</div>
-		</a>
+                <div id="project-pet-search" class="carousel-item">
+                    <div class="container-lg mx-auto row">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="triangle-marker col-4 align-self-end"></div>
+                        <div class="col-12 d-flex p-4 row justify-content-between">
+                            <h2>Pet Search API demo website</h2>
+                            <p class="py-4">This is a demo API page for searching adoptable pets. It hooks into the
+                                Petfinder API via their JavaScript SDK. The page was built in React and uses Bootstrap
+                                styling. Use the search field to look up a zip code or city and state to get results.
+                            </p>
+                            <div class="row justify-content-center mx-auto py-4">
+                                <a href="https://kevin-langer-design.github.io/pet-search/index.html" target="_blank"
+                                    role="button" class="btn btn-primary col-md-4 col-8 mx-3 mx-md-5 align-middle">Check out the
+                                    live page</a>
+                                <a class="col-md-1 col-2 text-center"
+                                    href="https://github.com/kevin-langer-design/kevin-langer-design.github.io/tree/master/pet-search"
+                                    target="_blank"><img class="project-icon" src="./assets/github-mark.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="/project-study-noggin-branding.html">
-			<div class="study-item">
-				<h3>Project Study</h3>
-				<h3>Noggin User Conference Branding</h3>
-				<img class="study-image" src="Assets/Noggin-Branding-Image.png">
-			</div>
-		</a>
+            </div>
+        </div><!--Carousel end-->
 
-		<a href="/workshop-study-sap.html">
-			<div class="study-item">
-				<h3>Workshop Study</h3>
-				<h3>SAP Fiori</h3>
-				<img class="study-image" src="Assets/Fiori_Share_Out.png">
-			</div>
-		</a>
+        <div class="container-xl" id="nav-skills"> <!--Technical Skills-->
+            <div class="row py-4">
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <ul>
+                        <li>Illustrator</li>
+                        <li>InDesign</li>
+                        <li>Photoshop</li>
+                        <li>After Effects</li>
+                        <li>Flash / ActionScript</li>
+                        <li>Cinema 4D</li>
+                        <li>Premiere</li>
+                        <li>Final Cut Pro</li>
+                        <li>Hotjar</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS / Sass</li>
+                        <li>JavaScript / jQuery</li>
+                        <li>React</li>
+                        <li>Maze</li>
+                        <li>HubSpot</li>
+                        <li>Unbounce</li>
+                        <li>Webflow</li>
+                        <li>Kameleoon</li>
+                        <li>Google Analytics</li>
+                        <li>Google Optimize</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--Technical Skills end-->
 
-		<a href="/project-study-noggin.html">
-			<div class="study-item">
-				<h3>Project Study</h3>
-				<h3>Noggin User Conference Agenda</h3>
-				<img class="study-image" src="Assets/Noggin_UC_Agenda_Roughs.png">
-			</div>
-		</a>
-	</div>
-</div>
+        <div class="container-xl"> <!--Job Skills-->
+            <div class="row py-4">
+                <h2>Job Skills</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <ul>
+                        <li>Visual Design</li>
+                        <li>UX / UI Design</li>
+                        <li>Web Design</li>
+                        <li>Graphic Design</li>
+                        <li>Wireframes / Storyboard</li>
+                        <li>Persona Development</li>
+                        <li>Motion Graphics</li>
+                        <li>Photography</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <ul>
+                        <li>SEO Landing Pages</li>
+                        <li>A/B Testing</li>
+                        <li>Workshop Facilitation</li>
+                        <li>Project Management</li>
+                        <li>Digital Publication</li>
+                        <li>Branding Identity</li>
+                        <li>Deisgn Strategy</li>
+                        <li>Art Direction</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--Job Skills end-->
 
-<div class="row">
-	<h2>Take a look at some of my finished work</h2>
-	<div class="flex-row portfolio-item-container">
-		<a href="/web.html">
-			<div class="portfolio-item">
-				<h3>Web</h3>
-				<svg class="web" xmlns="http://www.w3.org/2000/svg" width="100%" height="270px" viewBox="0 0 183.93 238.14"><path class="a" d="M183.93,238.14H0V0H183.93ZM2,236.14H181.93V2H2Z"/><circle class="a" cx="6.86" cy="6.53" r="2.64"/><circle class="a" cx="17.13" cy="6.53" r="2.64"/><circle class="a" cx="27.41" cy="6.53" r="2.64"/><rect class="a" x="1" y="11.66" width="181.93" height="2"/><rect class="a" x="1" y="70.42" width="181.93" height="2"/><path class="a" d="M7.41,72.25,6.32,70.58,51,41.36A14.4,14.4,0,0,1,66.28,41L91.9,56l45.52-33.15a11.37,11.37,0,0,1,14,.45L183.57,50l-1.28,1.54L150.12,24.8a9.37,9.37,0,0,0-11.53-.37L92,58.34,65.27,42.71A12.41,12.41,0,0,0,52.13,43Z"/><path class="a" d="M67.17,54.79a11.78,11.78,0,0,1-4-1,19.7,19.7,0,0,0-5.41-1.39,19.51,19.51,0,0,0-7,.94,19.84,19.84,0,0,1-7.1.94,29.75,29.75,0,0,1-7.41-1.39L37,51.05l-.36.93.36-.93a29.15,29.15,0,0,0,6.87,1.26,17.94,17.94,0,0,0,6.4-.88,21.06,21.06,0,0,1,7.67-1,21.78,21.78,0,0,1,5.94,1.5c2,.74,3.31,1.23,4.81.52C72.06,50.84,81,50.05,81.39,50l.17,2c-.09,0-9,.79-12,2.25A5.39,5.39,0,0,1,67.17,54.79Z"/><path class="a" d="M143.36,37.05a25.65,25.65,0,0,1-5.66-1c-1.13-.29-2.41-.61-3.79-.91-4.52-1-10.55.35-10.61.36l-.43-2c.26-.06,6.52-1.43,11.47-.36,1.4.3,2.7.63,3.85.92,2.65.67,4.74,1.19,6,.89a14.11,14.11,0,0,0,1.82-.59,16.64,16.64,0,0,1,10-.87,71.58,71.58,0,0,0,8.78,1.23l-.05,2a73.8,73.8,0,0,1-9.09-1.26,14.7,14.7,0,0,0-9,.78,15.89,15.89,0,0,1-2.06.66A5.54,5.54,0,0,1,143.36,37.05Z"/><rect class="a" x="52.75" y="25.52" width="70.33" height="6.19"/><rect class="a" x="16.49" y="88.4" width="60.25" height="5.09"/><path class="a" d="M34.22,143.71a18.52,18.52,0,1,1,18.52-18.52A18.54,18.54,0,0,1,34.22,143.71Zm0-35.47a17,17,0,1,0,17,17A17,17,0,0,0,34.22,108.24Z"/><path class="a" d="M91.41,143.71a18.52,18.52,0,1,1,18.52-18.52A18.54,18.54,0,0,1,91.41,143.71Zm0-35.47a17,17,0,1,0,17,17A17,17,0,0,0,91.41,108.24Z"/><path class="a" d="M148.6,143.71a18.52,18.52,0,1,1,18.52-18.52A18.54,18.54,0,0,1,148.6,143.71Zm0-35.47a17,17,0,1,0,17,17A17,17,0,0,0,148.6,108.24Z"/><rect class="a" x="75.53" y="153.37" width="27.01" height="1.97"/><rect class="a" x="75.53" y="157.64" width="29.31" height="1.97"/><rect class="a" x="75.53" y="161.91" width="31.76" height="1.97"/><rect class="a" x="75.53" y="166.18" width="17.53" height="1.97"/><rect class="a" x="16.49" y="189.01" width="140.68" height="1.97"/><rect class="a" x="16.49" y="193.28" width="138.29" height="1.97"/><rect class="a" x="16.49" y="197.55" width="149.85" height="1.97"/><rect class="a" x="16.49" y="201.82" width="82.72" height="1.97"/><rect class="a" x="16.49" y="153.37" width="29.54" height="1.97"/><rect class="a" x="16.49" y="157.64" width="29.31" height="1.97"/><rect class="a" x="16.49" y="161.91" width="25.76" height="1.97"/><rect class="a" x="16.49" y="166.18" width="21" height="1.97"/><rect class="a" x="130.86" y="153.37" width="27.97" height="1.97"/><rect class="a" x="130.86" y="157.64" width="26.3" height="1.97"/><rect class="a" x="130.86" y="161.91" width="27.1" height="1.97"/><rect class="a" x="130.86" y="166.18" width="23.28" height="1.97"/></svg>
-			</div>
-		</a>
+        <div class="container-xl" id="nav-experience"> <!--Experience-->
+            <div class="row py-4">
+                <h2>Experience</h2>
+            </div>
 
-		<a href="/email.html">
-			<div class="portfolio-item">
-				<h3>Email</h3>
-				<svg class="email" xmlns="http://www.w3.org/2000/svg" width="100%" height="270px" viewBox="0 0 151.6 254.87"><path class="a" d="M131.49,254.87H20.12A20.14,20.14,0,0,1,0,234.75V20.12A20.14,20.14,0,0,1,20.12,0H131.49A20.13,20.13,0,0,1,151.6,20.12V234.75A20.14,20.14,0,0,1,131.49,254.87ZM20.12,2A18.14,18.14,0,0,0,2,20.12V234.75a18.14,18.14,0,0,0,18.12,18.12H131.49a18.14,18.14,0,0,0,18.11-18.12V20.12A18.14,18.14,0,0,0,131.49,2Z"/><path class="a" d="M136,236.39H15.62c-4.37,0-7.93-3.91-7.93-8.7V20.08c0-4.79,3.56-8.69,7.93-8.69H43.34a4,4,0,0,1,3.38,1.93,12.53,12.53,0,0,0,10.5,6.07H94.39a12.53,12.53,0,0,0,10.49-6.07,4,4,0,0,1,3.39-1.93H136c4.37,0,7.93,3.9,7.93,8.69V227.69C143.91,232.48,140.35,236.39,136,236.39ZM15.62,13.39c-3.27,0-5.93,3-5.93,6.69V227.69c0,3.69,2.66,6.7,5.93,6.7H136c3.27,0,5.93-3,5.93-6.7V20.08c0-3.69-2.66-6.69-5.93-6.69H108.27a2,2,0,0,0-1.7,1,14.52,14.52,0,0,1-12.18,7H57.22a14.53,14.53,0,0,1-12.19-7,2,2,0,0,0-1.69-1Z"/><path class="a" d="M58,16.15a3.76,3.76,0,1,1,3.76-3.76A3.77,3.77,0,0,1,58,16.15Zm0-5.9a2.14,2.14,0,1,0,2.14,2.14A2.15,2.15,0,0,0,58,10.25Z"/><rect class="a" x="66.51" y="11.39" width="30.78" height="2"/><rect class="a" x="45.02" y="242.64" width="61.57" height="2"/><polygon class="a" points="31.97 16.54 29.16 16.54 29.16 15.34 17.33 15.34 17.33 20.46 29.16 20.46 29.16 19.26 31.97 19.26 31.97 16.54"/><circle class="a" cx="132.8" cy="18.26" r="1.55"/><circle class="a" cx="126.8" cy="18.26" r="1.55"/><circle class="a" cx="120.8" cy="18.26" r="1.55"/><circle class="a" cx="114.8" cy="18.26" r="1.55"/><path class="a" d="M126.25,36.85H113.8V27.91h12.45Zm-10.45-2h8.45V29.91H115.8Z"/><polygon class="a" points="120.02 34.11 114.19 29.71 115.4 28.11 120.02 31.6 124.65 28.11 125.85 29.71 120.02 34.11"/><rect class="a" x="19.96" y="28.91" width="70.39" height="5.82"/><rect class="a" x="19.96" y="37.92" width="79.17" height="5.82"/><path class="a" d="M133.8,236.39H19V51.18H133.8ZM21,234.39H131.8V53.18H21Z"/><rect class="a" x="35.35" y="58.42" width="7.48" height="7.48" rx="3.74"/><rect class="a" x="46.75" y="58.42" width="40.57" height="7.48" rx="3.74"/><rect class="a" x="19.96" y="70.19" width="112.84" height="2"/><rect class="a" x="37.43" y="86.67" width="77.9" height="11.43"/><rect class="a" x="40.99" y="103.87" width="70.78" height="11.43"/><rect class="a" x="19.96" y="136.08" width="112.84" height="2"/><rect class="a" x="40.62" y="148.92" width="64.33" height="1.97"/><rect class="a" x="35.35" y="153.19" width="75.52" height="1.97"/><rect class="a" x="35.35" y="157.46" width="81.84" height="1.97"/><rect class="a" x="35.35" y="170.27" width="59.35" height="1.97"/><rect class="a" x="35.35" y="166" width="81.84" height="1.97"/><rect class="a" x="35.35" y="183.09" width="68.42" height="1.97"/><rect class="a" x="35.35" y="161.73" width="67.35" height="1.97"/><rect class="a" x="40.62" y="178.82" width="67.28" height="1.97"/><rect class="a" x="35.35" y="204.44" width="69.6" height="1.97"/><rect class="a" x="35.35" y="187.36" width="81.84" height="1.97"/><rect class="a" x="35.35" y="200.17" width="72.55" height="1.97"/><rect class="a" x="35.35" y="195.9" width="77.45" height="1.97"/><rect class="a" x="35.35" y="212.98" width="81.84" height="1.97"/><rect class="a" x="35.35" y="191.63" width="65.33" height="1.97"/><rect class="a" x="35.35" y="208.71" width="75.47" height="1.97"/><rect class="a" x="19.96" y="93.98" width="112.84" height="2"/><polygon class="a" points="113.62 137.69 81.41 95.98 71.34 95.98 39.14 137.69 37.55 136.47 70.36 93.98 82.39 93.98 82.69 94.37 115.2 136.47 113.62 137.69"/><rect class="a" x="75.27" y="94.98" width="2" height="6"/><rect class="a" x="75.27" y="111.01" width="2" height="10.03"/><rect class="a" x="75.27" y="131.08" width="2" height="6"/><path class="a" d="M95.86,96h-39L57,94.86a19.49,19.49,0,0,1,38.71,0ZM59.18,94h34.4a17.49,17.49,0,0,0-34.4,0Z"/></svg>
-			</div>	
-		</a>			
+            <div class="containter-fluid pb-4"> <!--Cerebral-->
+                <div class="row">
+                    <h4>Cerebral, Landing Page Designer/Developer, 2022-2023</h4>
+                </div>
+                <div class="row">
+                    <p>On Cerebral's marketing team I designed and built landing pages optimized for high conversions in
+                        a
+                        target audience. I also created and monitored ongoing qualitative and quantitative landing page
+                        tests to maintain high those conversion rates and continually push our designs forward. With the
+                        test and analytics data I helped identify new ways to approach our marketing funnel and new
+                        audiences.</p>
+                </div>
 
-		<a href="/graphic.html">
-			<div class="portfolio-item">
-				<h3>Graphic</h3>
-				<svg class="print" xmlns="http://www.w3.org/2000/svg" width="100%" height="270px" viewBox="0 0 197.19 259.38"><rect class="a" x="20.81" y="131.17" width="56.63" height="1.97"/><rect class="a" x="13.64" y="135.44" width="69.24" height="1.97"/><rect class="a" x="13.64" y="139.71" width="75.03" height="1.97"/><rect class="a" x="13.64" y="143.98" width="63.81" height="1.97"/><rect class="a" x="13.64" y="148.25" width="63.81" height="1.97"/><rect class="a" x="13.64" y="152.52" width="69.24" height="1.97"/><rect class="a" x="13.64" y="156.79" width="75.03" height="1.97"/><rect class="a" x="13.64" y="161.06" width="61.66" height="1.97"/><rect class="a" x="13.64" y="165.33" width="75.03" height="1.97"/><rect class="a" x="20.81" y="173.87" width="56.63" height="1.97"/><rect class="a" x="13.64" y="178.14" width="69.24" height="1.97"/><rect class="a" x="13.64" y="182.41" width="75.03" height="1.97"/><rect class="a" x="13.64" y="186.68" width="61.32" height="1.97"/><rect class="a" x="13.64" y="190.95" width="69.24" height="1.97"/><rect class="a" x="13.64" y="195.22" width="75.03" height="1.97"/><rect class="a" x="13.64" y="199.49" width="55.81" height="1.97"/><rect class="a" x="13.64" y="203.76" width="63.81" height="1.97"/><rect class="a" x="20.81" y="212.3" width="67.86" height="1.97"/><rect class="a" x="13.64" y="216.57" width="60.76" height="1.97"/><rect class="a" x="13.64" y="220.85" width="75.03" height="1.97"/><rect class="a" x="13.64" y="225.12" width="54.17" height="1.97"/><rect class="a" x="108.52" y="97.08" width="63.81" height="1.97"/><rect class="a" x="108.52" y="101.35" width="69.24" height="1.97"/><rect class="a" x="108.52" y="105.62" width="63.81" height="1.97"/><rect class="a" x="108.52" y="109.89" width="69.24" height="1.97"/><rect class="a" x="108.52" y="114.16" width="75.03" height="1.97"/><rect class="a" x="115.7" y="173.87" width="56.63" height="1.97"/><rect class="a" x="108.52" y="178.14" width="69.24" height="1.97"/><rect class="a" x="108.52" y="182.41" width="75.03" height="1.97"/><rect class="a" x="115.7" y="190.95" width="62.06" height="1.97"/><rect class="a" x="108.52" y="195.22" width="75.03" height="1.97"/><rect class="a" x="115.7" y="203.76" width="56.63" height="1.97"/><rect class="a" x="108.52" y="208.03" width="69.24" height="1.97"/><rect class="a" x="108.52" y="212.3" width="75.03" height="1.97"/><rect class="a" x="108.52" y="216.57" width="69.24" height="1.97"/><rect class="a" x="108.52" y="220.85" width="75.03" height="1.97"/><rect class="a" x="20.81" y="104.63" width="56.63" height="1.97"/><rect class="a" x="13.64" y="108.9" width="69.24" height="1.97"/><rect class="a" x="13.64" y="113.17" width="75.03" height="1.97"/><rect class="a" x="13.64" y="117.44" width="69.24" height="1.97"/><rect class="a" x="13.64" y="121.71" width="75.03" height="1.97"/><rect class="a" x="115.7" y="80" width="56.63" height="1.97"/><rect class="a" x="108.52" y="84.27" width="69.24" height="1.97"/><rect class="a" x="108.52" y="88.54" width="75.03" height="1.97"/><rect class="a" x="108.52" y="92.81" width="41.41" height="1.97"/><path class="a" d="M197.19,259.38H0V0H197.19ZM2,257.38H195.19V2H2Z"/><path class="a" d="M48.26,95.77A34.79,34.79,0,1,1,83,61,34.83,34.83,0,0,1,48.26,95.77Zm0-67.57A32.79,32.79,0,1,0,81,61,32.83,32.83,0,0,0,48.26,28.2Z"/><rect class="a" x="7.63" y="8.65" width="181.93" height="11.97"/><rect class="a" x="7.63" y="238.18" width="181.93" height="11.97"/><rect class="a" x="108.52" y="47.34" width="60.25" height="11.97"/><rect class="a" x="124.31" y="124.51" width="50.66" height="5.09"/><rect class="a" x="118.52" y="134.65" width="60.25" height="5.09"/><rect class="a" x="118.52" y="144.78" width="56.45" height="5.09"/><rect class="a" x="118.52" y="154.92" width="48.87" height="5.09"/><path d="M112.89,121.94a2.65,2.65,0,0,0-2,2,5.65,5.65,0,0,0-.28,1.74,1,1,0,0,0,0,.18s0,.15,0,.32h2.23v4.46h-4.37v-4.12a7.8,7.8,0,0,1,1.21-4.67,4.54,4.54,0,0,1,3.16-1.89Zm6.91,0a2.3,2.3,0,0,0-1.71,1.27,5.22,5.22,0,0,0-.59,2.5c0,.08,0,.17,0,.25s0,.17,0,.27h2.24v4.46h-4.39v-4.12a9,9,0,0,1,1-4.35A4.15,4.15,0,0,1,119.8,120Z"/><path d="M172.13,166.44a2.69,2.69,0,0,0,2.05-2.25,5.76,5.76,0,0,0,.18-2h-2.23v-4.47h4.36v4.12a9.14,9.14,0,0,1-1,4.34,4.22,4.22,0,0,1-3.36,2.22Zm6.88,0a2.63,2.63,0,0,0,2-2.25,6.39,6.39,0,0,0,.21-2H179v-4.47h4.39v4.12a9.25,9.25,0,0,1-1,4.36,4.08,4.08,0,0,1-3.38,2.2Z"/></svg>
-			</div>
-		</a>
+                <!-- Button trigger modal -->
+                <div class="row">
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#cerebral-male">
+                        <img class="experience-thumb" src="./assets/cerebral/Cerebral-Male-Desktop-thumb.png"
+                            alt="Cerebral LP">
+                    </a>
 
-		<a href="/video.html">
-			<div class="portfolio-item">
-				<h3>Video</h3>
-				<svg class="video" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:16px;" width="100%" height="127px" viewBox="0 0 280.18 177.3"><path class="a" d="M280.18,177.3H0V0H280.18ZM2,175.3H278.18V2H2Z"/><rect class="a" x="36.53" y="156.25" width="186.56" height="4.24"/><path class="a" d="M269.19,170.15H14.8V146.6H269.19Zm-252.39-2H267.19V148.6H16.8Z"/><polygon class="a" points="250.84 165.17 242.21 165.17 242.21 156.55 244.21 156.55 244.21 163.17 250.84 163.17 250.84 165.17"/><polygon class="a" points="255.8 160.2 253.8 160.2 253.8 153.58 247.18 153.58 247.18 151.58 255.8 151.58 255.8 160.2"/><rect class="a" x="240.81" y="157.37" width="16.39" height="2" transform="translate(-39.06 222.46) rotate(-45)"/><circle class="a" cx="52.21" cy="158.21" r="4.41"/><polygon class="a" points="33.4 158.21 22.84 152.12 22.84 164.31 33.4 158.21"/><polygon class="a" points="161.59 78.65 126.95 58.66 126.95 98.65 161.59 78.65"/><path class="a" d="M140.09,116.82a38.17,38.17,0,1,1,38.17-38.17A38.22,38.22,0,0,1,140.09,116.82Zm0-74.33a36.17,36.17,0,1,0,36.17,36.16A36.21,36.21,0,0,0,140.09,42.49Z"/></svg>
-				<svg class="video" xmlns="http://www.w3.org/2000/svg" width="100%" height="127px" viewBox="0 0 280.18 177.3"><path class="a" d="M280.18,177.3H0V0H280.18ZM2,175.3H278.18V2H2Z"/><rect class="a" x="36.53" y="156.25" width="186.56" height="4.24"/><path class="a" d="M269.19,170.15H14.8V146.6H269.19Zm-252.39-2H267.19V148.6H16.8Z"/><polygon class="a" points="250.84 165.17 242.21 165.17 242.21 156.55 244.21 156.55 244.21 163.17 250.84 163.17 250.84 165.17"/><polygon class="a" points="255.8 160.2 253.8 160.2 253.8 153.58 247.18 153.58 247.18 151.58 255.8 151.58 255.8 160.2"/><rect class="a" x="240.81" y="157.37" width="16.39" height="2" transform="translate(-39.06 222.46) rotate(-45)"/><circle class="a" cx="52.21" cy="158.21" r="4.41"/><polygon class="a" points="33.4 158.21 22.84 152.12 22.84 164.31 33.4 158.21"/><polygon class="a" points="161.59 78.65 126.95 58.66 126.95 98.65 161.59 78.65"/><path class="a" d="M140.09,116.82a38.17,38.17,0,1,1,38.17-38.17A38.22,38.22,0,0,1,140.09,116.82Zm0-74.33a36.17,36.17,0,1,0,36.17,36.16A36.21,36.21,0,0,0,140.09,42.49Z"/></svg>
-			</div>
-		</a>
-	</div>
-</div>
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#cerebral-value">
+                        <img class="experience-thumb" src="./assets/cerebral/Cerebral-Value-Desktop-thumb.png"
+                            alt="Cerebral LP">
+                    </a>
 
-<div class="row">
-<div id="resume">
-	<h2>Have a look at my résumé</h2>
-	<h3>Skills</h3>
-	<div class="flex-row">
-		<div class="bullets-half">
-			<ul>
-				<li>Visual Design</li>
-				<li>UX / UI Design</li>
-				<li>Web Design</li>
-				<li>Graphic Design</li>
-				<li>Wireframes / Storyboard</li>
-				<li>Persona Development</li>
-				<li>Motion Graphics</li>
-				<li>Photography</li>
-			</ul>
-		</div>
-		<div class="bullets-half">
-			<ul>
-				<li>SEO Landing Pages</li>
-				<li>A/B Testing</li>
-				<li>Workshop Facilitation</li>
-				<li>Project Management</li>
-				<li>Digital Publication</li>
-				<li>Branding Identity</li>
-				<li>Design Strategy</li>
-				<li>Art Direction</li>
-			</ul>
-		</div>
-	</div>
-	<h3>Industry Experience</h3>
-	<h4>Cerebral, Landing Page Designer/Developer, 2022-2023</h4>
-	<p>On Cerebral's marketing team I designed and built landing pages optimized for high conversions in a target audience. I also created and monitored ongoing qualitative and quantitative landing page tests to maintain high those conversion rates and continually push our designs forward. With the test and analytics data I helped identify new ways to approach our marketing funnel and new audiences.</p>
-	<br>
-	<h4>CA.Graphics, Owner/Creative, 2021-Current</h4>
-	<p>Created and curated an online store for California focused apparel and goods. Designed and built the website along with the products and ads. Managed social media advertising and advertising campaigns.</p>
-	<br>
-	<h4>Viz.ai, Senior Designer, 2019-2021</h4>
-	<p>At Viz.ai I worked directly with executives and KOL's. I was in charge of all the visual projects outside of the app including magazine ads, websites, emails, conference booths, presentations, and many other items. One of my achievements was successfully transferring and redesigning and building the website.</p>
-	<br>
-	<h4>Noggin, Web and Graphic Designer, 2018-2019</h4>
-	<p>Working in a team I facilitated the design and creation of new websites, landing pages, and emails in HubSpot. I add additional support by creating white papers, guides, case studies, and additional graphics needed for marketing and the company.</p>
-	<br>
-	<h4>Poll Everywhere, Designer, 2015-2017</h4>
-	<p>As the graphic and visual designer I provided art and design to Marketing. This included landing page mocks, web assets, print assets, newsletter layouts, emails, promotional goods, and anything else that was visual in nature. I worked closely with copywriters and iterated quickly on ideas.</p>
-	<br>
-	<h4>SAP, Design Intern, 2014-2015</h4>
-	<p>Working in SAP’s Design & Co-Innovation Center I assisted on projects by creating story driven materials.
-	Following the Design Thinking methodology, I helped facilitate workshops and group activities for clients. I also
-	provide support for creating visual assets for still and motion graphics pieces. I was also the photographer and
-	videographer for various projects.</p>
-	<br>
-	<h4>FilmFest, Design Intern, 2013-2014</h4>
-	<p>This was a lean startup getting themselves up on their feet. As their only designer I successfully redesigned the
-	logo for the company and produced all the other graphics used in app and in advertising. I assisted with the visual
-	design of the product across multiple platforms including Roku, iOS, Android, and web. I also created storyboards,
-	animatics, and videos for short motion graphic pieces.</p>
-	<br>
-	<h4>Freelance, Graphic Designer, 2012-2015</h4>
-	<p>Working with several clients I have produced many graphic pieces tailored to their needs. This included branding
-	services, logo design, print design, web design, and photography.</p>
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#cerebral-ptsd">
+                        <img class="experience-thumb" src="./assets/cerebral/Cerebral-PTSD-Male-Desktop-thumb.png"
+                            alt="Cerebral LP">
+                    </a>
 
-	<h3>Technical Skills</h3>
-	<div class="flex-row">
-		<div class="bullets-half">
-			<ul>
-				<li>Illustrator</li>
-				<li>InDesign</li>
-				<li>Photoshop</li>
-				<li>After Effects</li>
-				<li>Flash / ActionScript</li>
-				<li>Cinema 4D</li>
-				<li>Premiere</li>
-				<li>Final Cut Pro</li>
-				<li>Figma</li>
-				<li>Sketch</li>
-			</ul>
-		</div>
-		<div class="bullets-half">
-			<ul>
-				<li>HTML</li>
-				<li>CSS / Sass</li>
-				<li>JavaScript/jQuery</li>
-				<li>Hotjar</li>
-				<li>Maze</li>
-				<li>HubSpot</li>
-				<li>Unboubnce</li>
-				<li>Webflow</li>
-				<li>Kameleoon</li>
-				<li>Goolge Analytics</li>
-				<li>Goolge Optimize</li>
-			</ul>
-		</div>
-	</div>
+                    <a role="button" class="experience-button" data-bs-toggle="modal"
+                        data-bs-target="#cerebral-insomnia">
+                        <img class="experience-thumb" src="./assets/cerebral/Cerebral-Insomnia-Desktop-thumb.png"
+                            alt="Cerebral LP">
+                    </a>
+                </div>
 
-	<h3>Prior Work History</h3>
-	<p>NELA, Administrative Assistant 2008-2012<br>Bayside Marin, Administrative Assistant 2006-2008</p>
-	<h3>Education</h3>
-	<p>BAS in Motion Graphic Design, Ex’pression College, Salutatorian, 2014<br>Cooper U Interaction Design, 2013</p>
+                <!-- Modal -->
+                <div class="modal fade" id="cerebral-male" tabindex="-1" aria-labelledby="cerebralMale"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="cerebralMale">Cerebral Insomnia Landing Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>After an extensive audience analysis on our landing pages it was identified that
+                                    Cerebral had the potential to capture more of the male audience base. We did a deep
+                                    dive into what our services offered this audience and how we could present a landing
+                                    page to them. We ultimately came up with two personas and built two pages targeting
+                                    these persons. After a few weeks in A/B testing this persona based on those
+                                    currently going through a crisis won out with better performance. I was also able to
+                                    use some of the same photography in a set of social media ads so that the imagery of
+                                    the ad matched that of the landing page.</p>
+                                <img src="./assets/cerebral/Cerebral-Male-Desktop.png" alt="Cerebral Insomnia LP">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</div>
-</div>
-<footer>
-	<a class="social-icon" target="_blank" href="http://www.linkedin.com/in/kevinlanger/">
-		<svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-	</a>
+                <div class="modal fade" id="cerebral-value" tabindex="-1" aria-labelledby="cerebralValue"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="cerebralValue">Cerebral Value Landing
+                                    Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>In looking at the performance of key words used in our search advertising we noticed
+                                    that value based terminology was becoming more successful. Taking that cue we
+                                    created a page based around the value Cerebral offered pushing our insurance
+                                    coverage forward above the fold. The result was a very successful landing page that
+                                    we were able to place in different channels. This screenshot is the culmination of a
+                                    few A/B tests on layout, style, and copy where we took the winning results to
+                                    improve the page even more.</p>
+                                <img src="./assets/cerebral/Cerebral-Value-Desktop.png" alt="Cerebral Value LP">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-	<a class="social-icon" target="_blank" href="https://dribbble.com/kevmonster">
-		<svg class="dribbble" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 448 512"><path d="M90.2 228.2c8.9-42.4 37.4-77.7 75.7-95.7 3.6 4.9 28 38.8 50.7 79-64 17-120.3 16.8-126.4 16.7zM314.6 154c-33.6-29.8-79.3-41.1-122.6-30.6 3.8 5.1 28.6 38.9 51 80 48.6-18.3 69.1-45.9 71.6-49.4zM140.1 364c40.5 31.6 93.3 36.7 137.3 18-2-12-10-53.8-29.2-103.6-55.1 18.8-93.8 56.4-108.1 85.6zm98.8-108.2c-3.4-7.8-7.2-15.5-11.1-23.2C159.6 253 93.4 252.2 87.4 252c0 1.4-.1 2.8-.1 4.2 0 35.1 13.3 67.1 35.1 91.4 22.2-37.9 67.1-77.9 116.5-91.8zm34.9 16.3c17.9 49.1 25.1 89.1 26.5 97.4 30.7-20.7 52.5-53.6 58.6-91.6-4.6-1.5-42.3-12.7-85.1-5.8zm-20.3-48.4c4.8 9.8 8.3 17.8 12 26.8 45.5-5.7 90.7 3.4 95.2 4.4-.3-32.3-11.8-61.9-30.9-85.1-2.9 3.9-25.8 33.2-76.3 53.9zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-64 176c0-88.2-71.8-160-160-160S64 167.8 64 256s71.8 160 160 160 160-71.8 160-160z"/></svg>
-	</a>
+                <div class="modal fade" id="cerebral-ptsd" tabindex="-1" aria-labelledby="cerebralPTSD"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="cerebralPTSD">Cerebral Value Landing
+                                    Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Cerebral already had a PTSD landing page with good performance but we hypothesized
+                                    that we could improve it with a more targeted landing page. We came up with a newer
+                                    style and with more comprehensive information on the page. After a few weeks we
+                                    noticed that we had two audiences coming to the page, one was middle-age women and
+                                    the other were men. The original page had a younger woman above the fold in its
+                                    imagery so we updated the image and then duplicated the page and created a male
+                                    focused version to specifically target that audience. This is the male duplicate
+                                    page. Ultimately the newer pages performed better.</p>
+                                <img src="./assets/cerebral/Cerebral-PTSD-Male-Desktop.png" alt="Cerebral PTSD LP">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-	<a class="social-icon" target="_blank" href="https://vimeo.com/kevmonster">
-		<svg class="vimeo" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-16.2 149.6c-1.4 31.1-23.2 73.8-65.3 127.9-43.5 56.5-80.3 84.8-110.4 84.8-18.7 0-34.4-17.2-47.3-51.6-25.2-92.3-35.9-146.4-56.7-146.4-2.4 0-10.8 5-25.1 15.1L64 192c36.9-32.4 72.1-68.4 94.1-70.4 24.9-2.4 40.2 14.6 46 51.1 20.5 129.6 29.6 149.2 66.8 90.5 13.4-21.2 20.6-37.2 21.5-48.3 3.4-32.8-25.6-30.6-45.2-22.2 15.7-51.5 45.8-76.5 90.1-75.1 32.9 1 48.4 22.4 46.5 64z"/></svg>
-	</a>
+                <div class="modal fade" id="cerebral-insomnia" tabindex="-1" aria-labelledby="cerebralInsomnia"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="cerebralInsomnia">Cerebral Insomnia Landing
+                                    Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Combing through some more of our performance data we saw that there was
+                                    an
+                                    opportunity to market to insomnia and sleep deprivation audiences. I
+                                    created this
+                                    page based on successful components of other pages such as having more
+                                    diverse
+                                    imagery on the page. We launched this page against our generic landing
+                                    page and saw
+                                    an immediate increase in our conversion rates within the audience.</p>
+                                <img src="./assets/cerebral/Cerebral-Insomnia-Desktop.png" alt="Cerebral Insomnia LP">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Cerebral end-->
 
-	<a class="social-icon" target="_blank" href="https://www.flickr.com/photos/kevlanger">
-		<svg class="flickr" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM144.5 319c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5zm159 0c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5z"/></svg>
-	</a>
-</footer>
 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+            <div class="containter-fluid py-4"> <!--CA.Graphics-->
+                <div class="row">
+                    <h4>CA.Graphics, Owner/Creative, 2021-Current</h4>
+                </div>
+                <div class="row">
+                    <p>Created and curated an online store for California focused apparel and goods. Designed and
+                        built the website along with the products and ads. Managed social media advertising and
+                        advertising campaigns.</p>
+                </div>
+                <div class="row p-2">
+                    <a href="https://www.ca.graphics/" target="_blank" role="button"
+                        class="btn btn-secondary col-lg-3 col-md-4 col-8">Check out the live website</a>
+                </div>
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+            </div><!--CA.Graphics end-->
 
+            <div class="containter-fluid py-4"> <!--Viz.ai-->
+                <div class="row">
+                    <h4>Viz.ai, Senior Designer, 2019-2021</h4>
+                </div>
+                <div class="row">
+                    <p>At Viz.ai I worked directly with executives and KOL's. I was in charge of all the visual
+                        projects outside of the app including magazine ads, websites, emails, conference booths,
+                        presentations, and many other items. One of my achievements was successfully transferring
+                        and redesigning and building the website.</p>
+                </div>
+
+                <!-- Button trigger modal -->
+                <div class="row">
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#viz-about">
+                        <img class="experience-thumb" src="./assets/viz/viz_web_about_thumb.jpg" alt="Viz.ai LP">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#viz-analytics">
+                        <img class="experience-thumb" src="./assets/viz/viz_web_analytics_thumb.jpg" alt="Viz.ai LP">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#viz-ich">
+                        <img class="experience-thumb" src="./assets/viz/viz_email_introducing_ich_thumb.jpg"
+                            alt="Viz.ai LP">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#viz-evt">
+                        <img class="experience-thumb" src="./assets/viz/viz_graphic_evt.png" alt="Viz.ai LP">
+                    </a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="viz-about" tabindex="-1" aria-labelledby="vizAbout" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="vizAbout">Viz.ai About Web Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>When Viz.ai went through a website migration to Webflow they took the opportunity to
+                                    restyle and rebrand their website. The About Page was retooled as a resource for
+                                    those interested in the company, potential employees or investors. Highlighting
+                                    prime achievements and the strong leadership props up the company.</p>
+                                <img src="./assets/viz/viz_web_about.png" alt="Viz.ai About LP">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="viz-analytics" tabindex="-1" aria-labelledby="vizAnalytics"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="vizAnalytics">Viz.ai Analytics Web
+                                    Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>In looking at the performance of key words used in our search advertising we
+                                    noticed
+                                    that value based terminology was becoming more successful. Taking that cue we
+                                    created a page based around the value Cerebral offered pushing our insurance
+                                    coverage forward above the fold. The result was a very successful landing page
+                                    that
+                                    we were able to place in different channels. This screenshot is the culmination
+                                    of a
+                                    few A/B tests on layout, style, and copy where we took the winning results to
+                                    improve the page even more.</p>
+                                <img src="./assets/viz/viz_web_analytics.png" alt="Viz.ai Analytics Web Page">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="viz-ich" tabindex="-1" aria-labelledby="vizICH" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="vizICH">Viz.ai ICH Email</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Viz.ai uses Mailchimp as it's main platform for emails. This is an announcement email
+                                    for their new product, ICH (Intracranial Hemorrhage). The images and text are
+                                    designed to be visible and readable regardless of dark or light mode. Working with
+                                    an FDA approved medical device requires the strict following of FDA rules. You'll
+                                    notice citations for each medical claim and the data on the phone is not real
+                                    patient data.</p>
+                                <img src="./assets/viz/viz_email_introducing_ich.png" alt="Viz.ai ICH Email">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="viz-evt" tabindex="-1" aria-labelledby="vizEVT" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="vizEVT">Viz.ai ad in Endovascular Today</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This was a print ad placed in Endovascular Today promoting Viz.ai's LVO product
+                                    (Large Vessel Occlusion). Using the branded Viz.ai blue as the background created a
+                                    high saturation contrast from the other pages and ads in the magazine. Working with
+                                    an FDA approved medical device requires the strict following of FDA rules. You'll
+                                    notice the data on the phone is not real patient data.</p>
+                                <img src="./assets/viz/viz_graphic_evt.png" alt="Viz.ai ad in Endovascular Today">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Viz.ai end-->
+
+            <div class="containter-fluid py-4"> <!--Noggin-->
+                <div class="row">
+                    <h4>Noggin, Web and Graphic Designer, 2018-2019</h4>
+                </div>
+                <div class="row">
+                    <p>Working in a team I facilitated the design and creation of new websites, landing pages, and
+                        emails in HubSpot. I add additional support by creating white papers, guides, case studies, and
+                        additional graphics needed for marketing and the company.</p>
+                </div>
+
+                <!-- Button trigger modal -->
+                <div class="row">
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#noggin-security">
+                        <img class="experience-thumb" src="./assets/noggin/noggin_solution_security-thumb.jpg"
+                            alt="Noggin LP">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#noggin-careers">
+                        <img class="experience-thumb" src="./assets/noggin/noggin_careers-thumb.jpg" alt="Noggin LP">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#noggin-agenda">
+                        <img class="experience-thumb" src="./assets/noggin/noggin_uc_agenda-thumb.jpg" alt="Noggin LP">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#noggin-email">
+                        <img class="experience-thumb" src="./assets/noggin/noggin_email_newsletter3_thumb.jpg"
+                            alt="Noggin LP">
+                    </a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="noggin-security" tabindex="-1" aria-labelledby="nogginSecurity"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="nogginSecurity">Noggin Security Solution Web Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The Security Solution page was created as a series of Noggin Solution pages. The hero
+                                    image is an HTML animation that activates on mouse over and illustrates the ease of
+                                    Noggin's wizard. Designed by a talented coworker but built by me. It is in the
+                                    HubSpot CMS.</p>
+                                <img src="./assets/noggin/noggin_solution_security.png"
+                                    alt="Noggin Security Solution Web Page">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="noggin-careers" tabindex="-1" aria-labelledby="nogginCareers"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="nogginCareers">Noggin Careers Web Page</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The Noggin Careers page features an unobtrusive video hero that features a
+                                    recruitment video. The video is a smaller edited version of the recruitment video
+                                    and has no sound. The user can play the video
+                                    themselves to see the full video. Designed by a talented coworker but built by me.
+                                    It is in the HubSpot CMS.</p>
+                                <img src="./assets/noggin/noggin_careers.png" alt="Noggin Careers Web Page">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="noggin-agenda" tabindex="-1" aria-labelledby="nogginAgenda"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="nogginAgenda">Noggin Conference Agenda</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The agenda page from the Noggin UC website. This page was created with day filters so
+                                    the attendee can toggle between the first or second day of the conference. I made
+                                    the page completely responsive so an attendee could use it while at the event on
+                                    their
+                                    mobile device. I designed and built the page myself. It is in
+                                    the HubSpot CMS.</p>
+                                <img src="./assets/noggin/noggin_uc_agenda.png" alt="Noggin Conference Agenda">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="noggin-email" tabindex="-1" aria-labelledby="nogginEmail"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="nogginEmail">Noggin Crisis Newsletter</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The Noggin Newsletter was made in HubSpot with dynamic elements in mind for anybody
+                                    to customize and use. The header is changeable so it can be a "Crisis Newsletter" or
+                                    a "Safety Newsletter" simply by changing the text. The Format for additional content
+                                    can be formatted for 3 or 4 resources. Any image slot can be changed out to use what
+                                    ever image is needed. HTML, CSS, and HubL was used. This is the 3 resource email.
+                                </p>
+                                <img src="./assets/noggin/noggin_email_newsletter3.png" alt="Noggin Crisis Newsletter">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Noggin end-->
+
+            <div class="containter-fluid py-4"> <!--Poll Everywhere-->
+                <div class="row">
+                    <h4>Poll Everywhere, Designer, 2015-2017</h4>
+                </div>
+                <div class="row">
+                    <p>As the graphic and visual designer I provided art and design to Marketing. This included landing
+                        page mocks, web assets, print assets, newsletter layouts, emails, promotional goods, and
+                        anything else that was visual in nature. I worked closely with copywriters and iterated quickly
+                        on ideas.</p>
+                </div>
+
+                <!-- Button trigger modal -->
+                <div class="row">
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#pe-news-1">
+                        <img class="experience-thumb" src="./assets/poll-everywhere/pe-email-june2015_thumb.jpg"
+                            alt="Poll Everywhere Newsletter">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#pe-news-2">
+                        <img class="experience-thumb" src="./assets/poll-everywhere/pe-email-jan2016_thumb.jpg"
+                            alt="Poll Everywhere Newsletter">
+                    </a>
+
+                    <a role="button" class="experience-button" data-bs-toggle="modal" data-bs-target="#pe-sales">
+                        <img class="experience-thumb" src="./assets/poll-everywhere/pe-sales-collateral-01.jpg"
+                            alt="Poll Everywhere Sales Collateral">
+                    </a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="pe-news-1" tabindex="-1" aria-labelledby="PENews1" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="PENews1">Poll Everywhere Newsletter Primary</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The Poll Everywhere Newsletter was made to be a template for a higher impact emails.
+                                    Each section can be was easily altered to fit what ever content is needed. Animated
+                                    gifs were used frequently to display moving elements of the software. HTML and CSS
+                                    were used to hand code this email and was sent out using Mailchimp.</p>
+                                <img src="./assets/poll-everywhere/pe-email-june2015.jpg"
+                                    alt="Poll Everywhere Newsletter Primary">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="pe-news-2" tabindex="-1" aria-labelledby="PENews2" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="PENews2">Poll Everywhere Newsletter Variant</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This is a variant on the templated Poll Everywhere Newsletter. HTML and CSS were used
+                                    to hand code this email and was sent out using Mailchimp.</p>
+                                <img src="./assets/poll-everywhere/pe-email-jan2016.jpg"
+                                    alt="Poll Everywhere Newsletter Variant">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="pe-sales" tabindex="-1" aria-labelledby="PESales" aria-hidden="true">
+                    <div class="modal-dialog modal-ms modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="PESales">Poll Everywhere Sales Collateral</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>A generic two-page flyer going over the basic benefits of Poll Everywhere. This was
+                                    used ad the template for more specific flyers later on.</p>
+                                <img src="./assets/poll-everywhere/pe-sales-collateral-01.jpg"
+                                    alt="Poll Everywhere Sales Collateral Page 1">
+                                <img src="./assets/poll-everywhere/pe-sales-collateral-02.jpg"
+                                    alt="Poll Everywhere Sales Collateral Page 2">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Poll Everywhere end-->
+
+            <div class="containter-fluid py-4"> <!--SAP-->
+                <div class="row">
+                    <h4>SAP, Design Intern, 2014-2015</h4>
+                </div>
+                <div class="row">
+                    <p>Working in SAP's Design & Co-Innovation Center I assisted on projects by creating story driven
+                        materials. Following the Design Thinking methodology, I helped facilitate workshops and group
+                        activities for clients. I also provide support for creating visual assets for still and motion
+                        graphics pieces. I was also the photographer and videographer for various projects.</p>
+                </div>
+            </div><!--SAP end-->
+
+            <div class="containter-fluid py-4"> <!--FilmFest-->
+                <div class="row">
+                    <h4>FilmFest, Design Intern, 2013-2014</h4>
+                </div>
+                <div class="row">
+                    <p>This was a lean startup getting themselves up on their feet. As their only designer I
+                        successfully redesigned the logo for the company and produced all the other graphics used in app
+                        and in advertising. I assisted with the visual design of the product across multiple platforms
+                        including Roku, iOS, Android, and web. I also created storyboards, animatics, and videos for
+                        short motion graphic pieces.</p>
+                </div>
+            </div><!--FilmFest end-->
+
+            <div class="containter-fluid py-4"> <!--Freelance-->
+                <div class="row">
+                    <h4>Freelance, Graphic Designer, 2012-2015</h4>
+                </div>
+                <div class="row">
+                    <p>Working with several clients I have produced many graphic pieces tailored to their needs. This
+                        included branding services, logo design, print design, web design, and photography.</p>
+                </div>
+            </div><!--Freelance end-->
+
+
+        </div><!--Experience-->
+
+
+
+
+        <footer>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 pb-3">
+                        <a href="http://www.linkedin.com/in/kevinlanger/" target="_blank">
+                            <img src="./assets/linkedin.svg" alt="LinkedIn Icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-3">
+                        <p>Copyright Kevin Langer 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+
+    </div>
 </body>
+
 </html>
