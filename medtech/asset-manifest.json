@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/medtech/static/css/main.7e1dbde9.css",
+    "main.js": "/medtech/static/js/main.21621c95.js",
+    "static/js/787.aeb39de0.chunk.js": "/medtech/static/js/787.aeb39de0.chunk.js",
+    "index.html": "/medtech/index.html",
+    "main.7e1dbde9.css.map": "/medtech/static/css/main.7e1dbde9.css.map",
+    "main.21621c95.js.map": "/medtech/static/js/main.21621c95.js.map",
+    "787.aeb39de0.chunk.js.map": "/medtech/static/js/787.aeb39de0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e1dbde9.css",
+    "static/js/main.21621c95.js"
+  ]
+}
