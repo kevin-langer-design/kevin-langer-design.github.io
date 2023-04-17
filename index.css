@@ -1,12 +1,9 @@
 :root {
-    --primary-color: #20B2AA;
-    --secondary-color: #4682B4;
-    --tertiary-color: #F4A460;
-    --body-color: #FFE5D0;
-    --body-color-dark: #FFDAB9;
-    --body-color-alt: #AFEEEE;
-    --body-color-alt-gradient: #66CDAA;
-    --body-bg: #331904;
+    --primary-color: rgb(105,186,176);
+    --primary-color-25: rgba(105,186,176,0.25);
+    --secondary-color: rgb(233,196,106);
+    --tertiary-color: rgb(17,54,50);
+    --body-color: rgb(241,240,235);
     --bs-body-font-family: 'Quicksand', sans-serif;
 }
 
@@ -21,13 +18,13 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     margin: 0;
-    color: var(--body-bg);
+    color: var(--tertiary-color);
     background-color: var(--body-color);
 }
 
 .navbar {
-    background-image: linear-gradient(to right, var(--body-color-alt), var(--body-color-alt-gradient));
-    color: var(--body-bg)
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--tertiary-color)
 }
 
 .nav-name {
@@ -44,7 +41,7 @@ body {
 }
 
 footer {
-    background-image: linear-gradient(to left, var(--body-color-alt), var(--body-color-alt-gradient));
+    background-image: linear-gradient(to left, var(--primary-color), var(--secondary-color));
     background-color: white;
     padding: 2em 0;
 }
@@ -57,11 +54,11 @@ footer {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     color: #fff;
-    --c1: hsl(276 51% 47% / 1);
-    --c2: hsl(36 97% 63% / 1);
-    --c-m: hsl(0 98% 55% / 1);
-    --g1: #0000 .5em, var(--c1) calc(.5em + 1px);
-    --g2: #0000 .5em, var(--c2) calc(.5em + 1px);
+    --c1: var(--secondary-color);
+    --c2: var(--secondary-color);
+    --c-m: var(--secondary-color);
+    --g1: var(--body-color) .5em, var(--c1) calc(.5em + 1px);
+    --g2: var(--body-color) .5em, var(--c2) calc(.5em + 1px);
     --g3: var(--c1), var(--c-m), var(--c2);
     background:
         linear-gradient(90deg, var(--g3)) center,
@@ -136,8 +133,8 @@ footer {
 /*-----Carousel Modifications-----*/
 
 .carousel-item {
-    height: 400px;
-    background-color: var(--body-color-dark);
+    height: 350px;
+    background-color: var(--primary-color-25);
 }
 
 #project-travel,
@@ -182,14 +179,6 @@ footer {
     box-shadow: 0 0 7px var(--primary-color);
     border-radius: 100%;
     transform: scale(1.2, 1.2);
-}
-
-.carousel {
-    background-color: var(--body-color-alt);
-}
-
-.carousel-item {
-    height: 350px;
 }
 
 .carousel-indicators {
